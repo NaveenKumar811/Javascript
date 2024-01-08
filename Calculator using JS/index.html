@@ -1,0 +1,54 @@
+<html>
+<head>
+<title> Calculator using Javascript </title>
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="domjs.js"></script>
+<head>
+
+<body>
+<h2> Simple Calculator using Javascript </h2>
+<div class = "calc_form">
+<form name="form1">
+<table class="cal_table">
+<tr>
+<th colspan="4"><input type="text" id="calc" name="results"></th>
+</tr
+
+<tr>
+<td><input type="button" value="%" onclick="form1.results.value=form1.results.value + '%'"></td>
+<td><input type="button" value="X" onclick="form1.results.value=form1.results.value + '*'"></td>
+<td><input type="button" value="/" onclick="form1.results.value=form1.results.value + '/'"></td>
+<td><input type="button" id="clear" value="C" onclick="form1.results.value=' '"></td>
+</tr>
+
+<tr>
+<td><input type="button" value="7" onclick="form1.results.value=form1.results.value + '7'"></td>
+<td><input type="button" value="8" onclick="form1.results.value=form1.results.value + '8'"></td>
+<td><input type="button" value="9" onclick="form1.results.value=form1.results.value + '9'"></td>
+<td><input type="button" value="-" onclick="form1.results.value=form1.results.value + '-'"></td>
+</tr>
+
+<tr>
+<td><input type="button" value="4" onclick="form1.results.value=form1.results.value + '4'"></td>
+<td><input type="button" value="5" onclick="form1.results.value=form1.results.value + '5'"></td>
+<td><input type="button" value="6" onclick="form1.results.value=form1.results.value + '6'"></td>
+<td rowspan="2"><input type="button"  id="plus" value="+" onclick="form1.results.value=form1.results.value + '+'"></td>
+</tr>
+
+<tr>
+<td><input type="button" value="1" onclick="form1.results.value=form1.results.value + '1'"></td>
+<td><input type="button" value="2" onclick="form1.results.value=form1.results.value + '2'"></td>
+<td><input type="button" value="3" onclick="form1.results.value=form1.results.value + '3'"></td>
+</tr>
+
+<tr>
+<td><input type="button" value="00" onclick="form1.results.value=form1.results.value + '00'"></td>
+<td><input type="button" value="0" onclick="form1.results.value=form1.results.value + '0'"></td>
+<td><input type="button" value="." onclick="form1.results.value=form1.results.value + '.'"></td>
+<td><input type="button" id="equal" value="=" onclick="form1.results.value=eval(form1.results.value)"></td>
+</tr>
+</table>
+</form>
+</div>
+</body>
+</html>
