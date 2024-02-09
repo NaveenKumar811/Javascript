@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Const Object</h2>
+        <p>In const, we can change or add array elements and property but cannot redeclar.</p>
+        <p id="demo"></p>
+        <script>
+            //const array
+            const cars = {type:"bmw", model:"500", color:"white"};
+            // change elements
+            cars.color = "red";
+            //add an element
+            cars.owner = ("John");
+            document.getElementById("demo").innerHTML = "Car owner is " + cars.owner;
+        </script>
+    </body>
+</html>

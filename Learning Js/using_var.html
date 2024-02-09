@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Redeclaring a variable using var and global scope</h2>
+        <p id="demo"></p>
+
+        <script>
+            var x = 5;
+            {
+                var x = 2;
+            }
+            document.getElementById("demo").innerHTML = x;
+        </script>
+    </body>
+</html>
