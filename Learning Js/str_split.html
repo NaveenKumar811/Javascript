@@ -1,0 +1,42 @@
+<!--string can be converted to an array with the split()-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript String Methods</h1>
+<p>Display the first array element, after a string split:</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "a,b,c,d,e,f";
+const myArray = text.split(",");
+document.getElementById("demo").innerHTML = myArray[0];
+</script>
+
+</body>
+</html>
+
+<!---->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript String Methods</h1>
+<h2>The split().Method</h2>
+
+<p id="demo"></p>
+
+<script>
+let text = "Hello";
+const myArr = text.split("");
+
+text = "";
+for (let i = 0; i < myArr.length; i++) {
+  text += myArr[i] + "<br>"
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
