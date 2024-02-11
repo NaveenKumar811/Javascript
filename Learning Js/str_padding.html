@@ -1,0 +1,69 @@
+<!--padStart() and padEnd() to support padding at the beginning and at the end of a string.-->
+<!--padStart()-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The padStart() Method</h2>
+
+<p>The padStart() method pads a string from the start.</p>
+<p>It pads the string with another string (multiple times) until it reaches a given length.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "5";
+text = text.padStart(4,"*");
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+<!--To pad a number, convert the number to a string first.To pad a number, convert the number to a string first.-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The padStart() Method</h2>
+
+<p>The padStart() method pads a string from the start.</p>
+<p>It pads the string with another string (multiple times) until it reaches a given length.</p>
+
+<p id="demo"></p>
+
+<script>
+let numb = 5;
+let text = numb.toString();
+document.getElementById("demo").innerHTML = text.padStart(4,0);
+</script>
+
+</body>
+</html>
+
+<!--padEnd() method pads a string from the end.-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The padEnd() Method</h2>
+
+<p>The padEnd() method pads a string at the end.</p>
+<p>It pads the string with another string (multiple times) until it reaches a given length.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "5";
+text = text.padEnd(4,"0");
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
